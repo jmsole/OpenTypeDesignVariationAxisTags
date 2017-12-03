@@ -28,7 +28,9 @@
 
 **Name:** Glyph Extension
 
-**Description:** Used to vary a glyph extension by a positive or negative value depending on parameters assigned by the layout engine (when setting lines of text) or by optical adjustment by the user (for single words or shorter lengths of text).
+**Description:** Used to vary a glyph's extension by a positive or negative value depending on parameters assigned by the layout engine (when setting lines of text) or by optical adjustment by the user (for single words or shorter lengths of text).
+
+This axis works on a single instance of a glyph, where it will apply a change on it's extension (outline and spacing) on top of any other changes that have been previously applied via other axis.
 
 **Valid numeric range:** Any negative, zero or positive value.
 
