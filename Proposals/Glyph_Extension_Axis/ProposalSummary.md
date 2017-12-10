@@ -14,7 +14,7 @@
 **Previous revision date:** N/A
 
 ## General Technical Information
-**Overview:** [A brief description of the proposal—a detailed description is provided below.]
+**Overview:** This axis applies a change to the width (or extension) of a single glyph, in addition to any global parameters previously set in place by other axis. This is especially useful for manipulating the length of words or sentences locally, as opposed to adjusting the overall width of the font.
 
 **Related axes:** [If this axis is intended to be used specifically in combination with certain other already-registered or proposed axes, identify the axes or proosals.]
 
