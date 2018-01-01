@@ -34,7 +34,7 @@ This axis works on a single instance of a glyph, where it will apply a change on
 
 **Valid numeric range:** Any negative, zero or positive value.
 
-**Scale interpretation:** Starting with 0 as the glyph in its ‘normal’ state, any increase or decrease should represent the delta of that change in per-mille-of-em of the advanced width.
+**Scale interpretation:** Starting with 0 as the glyph in its ‘normal’ state after all other axes have been applied, any increase or decrease should represent the delta applied to the advanced width in font units.
 
 **Recommended or required ‘Regular’ value:** 0
 
@@ -45,13 +45,13 @@ expected.]
 
 **Script or language considerations:** This axis will be applicable to most scripts.
 
-For connecting scripts such as Arabic, Syriac or Nko this could require the development and implementation of a different way of justifying text, potentially dispensing of the requirements for characters such as the Arabic extension character—often referred to as the ‘Kashida’ or ‘Tatweel. This depends on what is established as the best method for designing the glyph extension and how this affects connections.
+For connecting scripts such as Arabic, Syriac or Nko this could require the development and implementation of a different way of justifying text, potentially dispensing of the requirements for characters such as the Arabic extension character—often referred to as the ‘Kashida’ or ‘Tatweel’. This depends on what is established as the best method for designing the glyph extension and how this affects connections.
 
 For non-connecting scripts/styles, the development of a separate strategy for adjusting character widths may be needed, depending on how the axis is expected to work and the effect it should have on the text layout.
 
-**Additional information:** The initial intent for this axis was a means to organically justify connecting scripts such as Arabic, Syriac or Nko. However, the same concept can also be applied to non-connecting scripts as a way of making small or large changes to glyphs to affect the length of a line of text.
+**Additional information:** The initial intent for this axis was as a means to organically justify connecting scripts such as Arabic, Syriac or Nko. However, the same concept can also be applied to non-connecting scripts as a way of making small or large changes to glyphs to affect the length of a line of text.
 
-An example of this is the minute adjustments to the contours of certain glyphs on a Gutenberg bible (insert link) to help adjust the length of lines of text while maintaining the overall density of text colour in the columns.
+An example of this is the minute adjustments to the contours of certain glyphs on the 42-line Gutenberg bible to create tighter fitting of certain character combinations that produced too much white-space within words [B-42 Story](http://www.daleguild.com/B-42_Story_01.html).
 
 ## Justification
 
