@@ -40,8 +40,13 @@ This axis works on a single instance of a glyph, where it will apply a change on
 
 **Suggested programmatic interactions:** When used to adjust the space of a line of justified text, applications should, taking into consideration the script's rules, adjust the extensions of individual glyphs to satisfy the desired line length.
 
-**UI recommendations:** [Provide any recommendations regarding how this axis should be handled in application user interfaces. See the Guidance file for details on what information is and isn't
-expected.]
+**UI recommendations:** UI recommendations change depending on how the axis is being used, which is itself dependant on environment, script and type of user.
+
+For Arabic the default should be to set this axis as hidden. Programmatic interaction for the Arabic script happens when a user sets a paragraph of text to be ‘fully justified’ or flush with both sides of the text box, at which point the layout engine will apply this axis on selected glyphs in a line of text to best fit the line to a line-length for justification purposes. A fully defined algorithm for this interaction should is to be defined, communicated and discussed with application developers for conventionality and interoperability purposes.
+
+When setting Arabic or other scripts on professional typesetting software, direct control over this axis is recommended to give users manual control over which glyphs will have modified extension and by which amount. This can be particularly useful when setting words or small sentences. When selecting a glyph the user would be presented with the option to change the value of this axis for that specific glyph. This selection would also override any programmatic interaction for this axis on that glyph.
+
+For other scripts/styles/uses, different programmatic interactions could be developed as a way to automate microtypographic adjustments to glyph-fitting in a way that would help enhance the appearance of set text.
 
 **Script or language considerations:** This axis will be applicable to most scripts.
 
