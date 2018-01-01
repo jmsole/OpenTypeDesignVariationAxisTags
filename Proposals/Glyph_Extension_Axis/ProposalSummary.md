@@ -40,8 +40,13 @@ This axis works on a single instance of a glyph, where it will apply a change on
 
 **Suggested programmatic interactions:** When used to adjust the space of a line of justified text, applications should, taking into consideration the script's rules, adjust the extensions of individual glyphs to satisfy the desired line length.
 
-**UI recommendations:** [Provide any recommendations regarding how this axis should be handled in application user interfaces. See the Guidance file for details on what information is and isn't
-expected.]
+**UI recommendations:** UI recommendations change depending on how the axis is being used, which is itself dependant on environment, script and type of user.
+
+For Arabic the default should be to set this axis as hidden. Programmatic interaction for the Arabic script happens when a user sets a paragraph of text to be ‘fully justified’ or flush with both sides of the text box. The layout engine will then apply this axis on selected glyphs within a line of text to best fit the line to a specific length for justification purposes. A fully defined algorithm for this interaction should be defined, communicated and discussed with application developers for conventionality and interoperability purposes.
+
+When setting Arabic or other scripts in professional typesetting software, users should be given the option of manual control over the axis, allowing them to apply any given extension value to a specific glyph. When selecting a glyph, the user would be presented with the option to change the value of this axis for that glyph. This selection would also override any programmatic interaction for this axis on the selected glyph. This can be particularly useful for the stylistic setting of Arabic words or short sentences; for example in poetry, which requires extensions to appear in specific places.
+
+For other scripts/styles/uses, different programmatic interactions could be developed to automate microtypographic adjustments to glyph-fitting in a way that would help enhance the appearance of set text.
 
 **Script or language considerations:** This axis will be applicable to most scripts.
 
@@ -49,9 +54,9 @@ For connecting scripts such as Arabic, Syriac or Nko this could require the deve
 
 For non-connecting scripts/styles, the development of a separate strategy for adjusting character widths may be needed, depending on how the axis is expected to work and the effect it should have on the text layout.
 
-**Additional information:** The initial intent for this axis was as a means to organically justify connecting scripts such as Arabic, Syriac or Nko. However, the same concept can also be applied to non-connecting scripts as a way of making small or large changes to glyphs to affect the length of a line of text.
+**Additional information:** The initial intent for this axis was a means to organically justify connecting scripts such as Arabic, Syriac or Nko. However, the same concept can also be applied to non-connecting scripts as a way of making small or large changes to glyphs to affect the length of a line of text.
 
-An example of this is the minute adjustments to the contours of certain glyphs on the 42-line Gutenberg bible to create tighter fitting of certain character combinations that produced too much white-space within words [B-42 Story](http://www.daleguild.com/B-42_Story_01.html).
+An example of this is the minute adjustments to the contours of certain glyphs in the 42-line Gutenberg bible to create tighter fitting of certain character combinations that produced too much white-space within words (see [B-42 Story](http://www.daleguild.com/B-42_Story_01.html)).
 
 ## Justification
 
