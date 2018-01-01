@@ -51,7 +51,7 @@ For non-connecting scripts/styles, the development of a separate strategy for ad
 
 **Additional information:** The initial intent for this axis was as a means to organically justify connecting scripts such as Arabic, Syriac or Nko. However, the same concept can also be applied to non-connecting scripts as a way of making small or large changes to glyphs to affect the length of a line of text.
 
-An example of this is the minute adjustments to the contours of certain glyphs on the 42-line Gutenberg bible to create tighter fitting of certain character combinations that produced too much white-space within words [B-42 Story](http://www.daleguild.com/B-42_Story_01.html).
+An example of this is the minute adjustments to the contours of certain glyphs on the 42-line Gutenberg bible to create tighter fitting of certain character combinations that produced too much white-space within words (see [B-42 Story](http://www.daleguild.com/B-42_Story_01.html)).
 
 ## Justification
 
