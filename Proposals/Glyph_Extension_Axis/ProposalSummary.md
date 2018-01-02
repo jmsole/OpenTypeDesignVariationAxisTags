@@ -7,7 +7,7 @@
 
 **Proposal name:** Glyph Extension axis
 
-**Date of submission:** xx December 2017
+**Date of submission:** 2 January 2018
 
 **New or revised proposal:** New
 
@@ -18,7 +18,7 @@
 
 **Related axes:** This axis should take effect once all other axes have been applied.
 
-**Similar axes:** To clarify, the proposed axis is different from the width or extended/condensed axis; the Glyph Extension axis is intended for local use, an example is that in a condensed typeface, a single glyph can be made wider. In connecting scripts, this will only affect the connecting strokes.
+**Similar axes:** To clarify, the proposed axis is different from the width or extended/condensed axis; the Glyph Extension axis is intended for local use, an example is that in a condensed typeface, a single glyph can be made wider. In connecting scripts, this will only affect connecting strokes.
 
 **Axis type:** Parametric with optical option
 
@@ -28,7 +28,7 @@
 
 **Name:** Glyph Extension
 
-**Description:** Used to vary the extension of a glyph by a positive or negative value, depending on parameters assigned by the layout engine (when setting lines of text) or by optical adjustment by the user (for single words or shorter lengths of text).
+**Description:** Used to vary the extension of a glyph by a positive or negative value, depending on parameters assigned by the layout engine (when setting lines of text) or by optical adjustments made by the user (for single words or shorter lengths of text).
 
 This axis works on a single instance of a glyph, where it will apply a change on its extension (outline and spacing) on top of any other changes that have been previously applied via other axes.
 
